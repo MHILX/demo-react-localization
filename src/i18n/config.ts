@@ -19,6 +19,9 @@ i18next.use(initReactI18next).init({
             translation: esTranslations
         }
     }
+}, (err, t) => {
+    if (err) return console.log('something went wrong loading', err);
+    t('key'); // -> same as i18next.t
 });
 
 export default i18next;

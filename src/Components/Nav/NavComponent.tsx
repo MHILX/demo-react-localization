@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { FC } from 'react';
-import './nav.css';
-import LanguageSelection from './Components/Language/LanguageSelection';
+import './NavComponent.css';
+import LanguageSelection from '../Language/LanguageSelection';
 
-const Nav: FC = () => {
+const Navigation: FC = () => {
   const { t } = useTranslation();
 
   return (
@@ -20,4 +20,4 @@ const Nav: FC = () => {
   );
 };
 
-export default Nav;
+export default Navigation;

@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import './LanguageSelection.css';
 
 export default function LanguageSelection() {
   const { i18n } = useTranslation();
@@ -8,9 +9,9 @@ export default function LanguageSelection() {
   }
 
   return(
-    <div className='footer'>
-      <button onClick={changeLanguage} value='en'>English</button>
-      <button onClick={changeLanguage} value='es'>Español</button>
+    <div className='lan-select'>
+      <button className='button-rounded' onClick={changeLanguage} value='en'>English</button>
+      <button className='button-rounded' onClick={changeLanguage} value='es'>Español</button>
     </div>
   )
 }

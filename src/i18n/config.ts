@@ -1,25 +1,24 @@
-import i18n, { Resource, InitOptions } from 'i18next';
+import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import enTranslations from './locales/en/translations.json';
+import esTranslations from './locales/es/translations.json';
 
-const resources: Resource = {
-    en: {
-        translations: require('./locales/en/translations.json')
-    },
-    es: {
-        translations: require('./locales/es/translations.json')
-    }
-};
-
-const options: InitOptions = {
+i18next.use(initReactI18next).init({
     fallbackLng: 'en',
-    lng: 'en',
-    resources,
-    ns: ['translations'],
-    defaultNS: 'translations'
-};
+    resources: {
+        en: {
+            //   translation: {
+            //     "i18n React Demo!!!": "Welcome to i18n React Demo!!!",
+            //     "Home": "My Home",
+            //     "Page 2": "About"
+            //   }
+            translation: enTranslations
+        },
+        es:
+        {
+            translation: esTranslations
+        }
+    }
+});
 
-i18n.use(initReactI18next).init(options);
-
-i18n.languages = ['en', 'es'];
-
-export default i18n;
+export default i18next;

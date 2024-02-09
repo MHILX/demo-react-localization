@@ -5,12 +5,12 @@
     background-color: #1e81b0;
     color: white;
     cursor: pointer;
-  }
-  
-  .button-rounded:hover {
-    background-color: #154c79;
-  }
+}
 
-  .lan-select button:last-child {
+.button-rounded:hover {
+    background-color: #154c79;
+}
+
+.lan-select button:last-child {
     margin-left: 5px;
-  }
+}

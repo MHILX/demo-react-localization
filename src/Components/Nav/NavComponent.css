@@ -9,7 +9,7 @@
 
 .nav div {
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 
 .nav a {
@@ -42,7 +42,7 @@
 }
 
 .nav div:last-child a {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .nav div:last-child a:first-child {

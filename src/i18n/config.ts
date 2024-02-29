@@ -28,7 +28,10 @@ i18next.use(initReactI18next)
     if (err) return console.log('something went wrong loading', err);
     t('key'); // -> same as i18next.t
 }).finally(() => {
-    console.log(`Browser Language: ${i18next.language}`);
+    console.log(`Site Language: ${i18next.language}`);
+    console.log(`Current Local Time: ${new Date().toLocaleTimeString()}`);
+    console.log(`Locale ${navigator.language}`);
+    console.log(`Time Zone: ${Intl.DateTimeFormat().resolvedOptions().timeZone}`);
 });
 
 export default i18next;
